@@ -11,6 +11,7 @@ import os
 from typing import Any, Dict, Optional
 
 from dotenv import load_dotenv
+from tools.search_knowledge import search_knowledge
 
 load_dotenv()
 
@@ -50,6 +51,18 @@ class LearningPathAgent:
             "paths. Given a user's request, produce a concise, actionable learning path "
             "with recommended resources, approximate durations, and suggested practice."
         )
+        knowledge_results = await search_knowledge(request)
+        if knowledge_results:
+            grounded_context = "\n\n".join(
+                f"Source: {result['source']}\nScore: {result['score']}\nContent: {result['content']}"
+                for result in knowledge_results
+                if result.get("content")
+            )
+            if grounded_context:
+                system_prompt = (
+                    f"{system_prompt}\n\n"
+                    f"Use this grounded knowledge to inform your response:\n{grounded_context}"
+                )
 
         messages = [
             {"role": "system", "content": system_prompt},
