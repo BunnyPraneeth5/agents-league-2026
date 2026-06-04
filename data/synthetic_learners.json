@@ -1,0 +1,47 @@
+[
+  {
+    "learner_id": "L-1001",
+    "name": "Avery Stone",
+    "role": "Cloud Application Developer",
+    "certification": "AZ-204",
+    "practice_score_avg": 82,
+    "hours_studied": 46,
+    "exam_outcome": "Passed"
+  },
+  {
+    "learner_id": "L-1002",
+    "name": "Mina Vale",
+    "role": "DevOps Engineer",
+    "certification": "AZ-400",
+    "practice_score_avg": 74,
+    "hours_studied": 39,
+    "exam_outcome": "Scheduled"
+  },
+  {
+    "learner_id": "L-1003",
+    "name": "Theo Marsh",
+    "role": "Cloud Solutions Architect",
+    "certification": "AZ-305",
+    "practice_score_avg": 68,
+    "hours_studied": 31,
+    "exam_outcome": "Needs Retake"
+  },
+  {
+    "learner_id": "L-1004",
+    "name": "Nora Finch",
+    "role": "Data Engineer",
+    "certification": "DP-203",
+    "practice_score_avg": 88,
+    "hours_studied": 52,
+    "exam_outcome": "Passed"
+  },
+  {
+    "learner_id": "L-1005",
+    "name": "Eli Rowan",
+    "role": "Platform Engineer",
+    "certification": "AZ-400",
+    "practice_score_avg": 61,
+    "hours_studied": 24,
+    "exam_outcome": "In Progress"
+  }
+]

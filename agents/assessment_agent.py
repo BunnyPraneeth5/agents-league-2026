@@ -40,14 +40,20 @@ class AssessmentAgent:
             }
 
         system_prompt = (
-            "You are AssessmentAgent. Generate 3-5 practice questions for the certification topic in the user request. "
+            "You are AssessmentAgent. You are given a study plan. Generate practice "
+            "questions specifically for week 1 topics in that plan. "
             "Each question should include a source note such as 'based on AZ-204 module 3' or a comparable exam domain. "
             "Provide the question, answer choices if appropriate, and indicate the correct answer."
+        )
+        user_prompt = (
+            f"Original request:\n{context.get('original_request', request)}\n\n"
+            f"Study plan:\n{context.get('study_plan', '')}\n\n"
+            f"Assessment request:\n{request}"
         )
 
         messages = [
             {"role": "system", "content": system_prompt},
-            {"role": "user", "content": request},
+            {"role": "user", "content": user_prompt},
         ]
 
         try:

@@ -40,15 +40,20 @@ class StudyPlanAgent:
             }
 
         system_prompt = (
-            "You are StudyPlanAgent. A learner has asked for a weekly study schedule for a "
-            "specific certification. Use the target certification and available weekly hours to "
+            "You are StudyPlanAgent. You are given a learning path. Build a study "
+            "schedule based specifically on it. Use the target certification and available weekly hours to "
             "produce a day-by-day or week-by-week plan, including focus areas, recommended study "
             "blocks, and realistic pacing. If the certification or hours are missing, ask clearly."
+        )
+        user_prompt = (
+            f"Original request:\n{context.get('original_request', request)}\n\n"
+            f"Learning path:\n{context.get('learning_path', '')}\n\n"
+            f"Study plan request:\n{request}"
         )
 
         messages = [
             {"role": "system", "content": system_prompt},
-            {"role": "user", "content": request},
+            {"role": "user", "content": user_prompt},
         ]
 
         try:

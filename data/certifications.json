@@ -1,0 +1,74 @@
+[
+  {
+    "id": "AZ-204",
+    "title": "Developing Solutions for Microsoft Azure",
+    "skills": [
+      "Azure compute solutions",
+      "Azure storage integration",
+      "Authentication and authorization",
+      "Azure Functions",
+      "Monitoring and optimization"
+    ],
+    "recommended_hours": 45,
+    "difficulty": "Intermediate",
+    "prerequisites": [
+      "Basic Azure services knowledge",
+      "Professional experience with Python, C#, JavaScript, or Java",
+      "Familiarity with REST APIs"
+    ]
+  },
+  {
+    "id": "AZ-400",
+    "title": "Designing and Implementing Microsoft DevOps Solutions",
+    "skills": [
+      "Source control strategy",
+      "Continuous integration",
+      "Continuous delivery",
+      "Infrastructure as code",
+      "Security and compliance in pipelines"
+    ],
+    "recommended_hours": 50,
+    "difficulty": "Advanced",
+    "prerequisites": [
+      "Experience with Azure administration or development",
+      "Working knowledge of Git",
+      "Familiarity with build and release pipelines"
+    ]
+  },
+  {
+    "id": "AZ-305",
+    "title": "Designing Microsoft Azure Infrastructure Solutions",
+    "skills": [
+      "Identity and governance design",
+      "Business continuity planning",
+      "Compute architecture",
+      "Data storage architecture",
+      "Network architecture"
+    ],
+    "recommended_hours": 60,
+    "difficulty": "Advanced",
+    "prerequisites": [
+      "Azure administration experience",
+      "Understanding of networking, security, and virtualization",
+      "Ability to translate business requirements into technical designs"
+    ]
+  },
+  {
+    "id": "DP-203",
+    "title": "Data Engineering on Microsoft Azure",
+    "skills": [
+      "Data ingestion",
+      "Data transformation",
+      "Data storage design",
+      "Pipeline orchestration",
+      "Data security and monitoring"
+    ],
+    "recommended_hours": 55,
+    "difficulty": "Intermediate",
+    "prerequisites": [
+      "SQL fundamentals",
+      "Experience with data processing concepts",
+      "Basic Azure storage and compute knowledge"
+    ]
+  }
+]
