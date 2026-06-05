@@ -1,4 +1,4 @@
-﻿# Certification Agent
+﻿# CareerForge AI
 
 An Agents League 2026 hackathon project that helps engineering teams plan, schedule, assess, and manage Microsoft certification readiness using a chained multi-agent workflow.
 
